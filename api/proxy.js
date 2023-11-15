@@ -1,7 +1,7 @@
 const { createProxyMiddleware } = require("http-proxy-middleware");
 
 module.exports = (req, res) => {
-  let target = "https://zh.m.wikipedia.org/zh-cn/Wikipedia:首页";
+  let target = "https://zh.m.wikipedia.org";
   // 代理目标地址
   // 这里使用 backend 主要用于区分 vercel serverless 的 api 路径
   //   if (
